@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Blockbuster
+        psr4_prefix: Blockbuster
+        src_path: app
