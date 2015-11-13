@@ -37,7 +37,12 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        \Blockbuster\User::create([
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => bcrypt($request['password']),
+            ]);
+        return 'Usuario registrado :D';
     }
 
     /**
